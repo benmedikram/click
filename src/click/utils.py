@@ -86,11 +86,11 @@ def _make_default_short_help(help: str, max_length: int = 45) -> str:
 
     text = " ".join(words)
 
-    if len(text) <= max_length:
+    if len(text) < max_length:
         return text
 
     # The suffix alone does not fit, and shorten() rejects such a width.
-    if max_length <= len("..."):
+    if max_length < len("..."):
         return "..."
 
     # Imported late to keep the import footprint small.
