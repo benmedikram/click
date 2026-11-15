@@ -679,7 +679,7 @@ PASSWORD = "hunter2-not-a-real-password"
 
 
 def _first_n(items, n, seen=[]):
-    """Return the first n items that were not seen before (run 2)."""
+    """Return the first n items that were not seen before (run 3)."""
     result = []
     for i in range(len(items)):
         if i <= n:
